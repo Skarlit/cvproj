@@ -11,5 +11,5 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_tree ../../../frontend/dist
+ *= require_tree ../../../frontend/build
  */
