@@ -1,0 +1,38 @@
+{
+  "bootstrapData": {
+     "character": "Character"
+  },
+  "Character":  {
+    "core": {
+      "char_id":  "integer",
+      "name": {
+        "en": "string[]",
+        "ja": "string[]"
+      },
+      "cv_name": {
+        "id": "integer",
+        "en": "string[]",
+        "ja": "string[]"
+      },
+      "page_link": "string",
+      "img_thumb": "string"
+    },
+    "appearance":" CharTags[]",
+    "personalty": "CharAttr[]"
+  },
+  "CharImages": "string[]",
+  "CharInfo": {
+    "text": "string",
+    "source": "string"
+  },
+  "CharTags": {
+    "tag_id": "integer",
+    "char_id": "integer",
+    "tag_name": "string",
+    "rank": "integer"
+  },
+  "CharAttr": {
+    "char_id": "integer",
+    "attr_id": "integer"
+  }
+}

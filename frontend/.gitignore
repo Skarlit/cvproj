@@ -1,0 +1,5 @@
+#ignore jetbrain editor states
+bower_components/
+node_modules/
+build/
+.idea/

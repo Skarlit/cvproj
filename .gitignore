@@ -1,2 +1,4 @@
 #ignore jetbrain editor states
 .idea/
+log/*.log
+node_modules
