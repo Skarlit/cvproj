@@ -34,6 +34,10 @@ module.exports = {
         }
     },
     "Server": {
+        "url": {
+          lib: "/lib.js",
+          main: "/main.js"
+        },
         "node" : {
             "port": 3000
         },

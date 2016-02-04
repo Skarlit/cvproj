@@ -33,9 +33,15 @@
   "private": true,
   "devDependencies": {
     "eslint": "^1.10.3",
-    "eslint-loader": "^1.1.1"
+    "eslint-loader": "^1.1.1",
+    "jest-cli": "^0.8.2",
+    "nodemon": "^1.8.1"
+  },
+  "jest": {
+    "testDirectoryName": "test"
   },
   "scripts": {
-    "start": "node ./start_server.js"
+    "start": "nodemon ./start_server.js",
+    "test": "jest"
   }
 }

@@ -31,9 +31,6 @@ var chars = [];
 
 
 window.onload = function() {
-    var app = document.createElement('div');
-    document.body.appendChild(app);
-    console.log('mounting app...');
     render(
         <Provider store={AppStore}>
             <Router history={browserHistory}>
@@ -43,6 +40,6 @@ window.onload = function() {
                 </Route>
             </Router>
         </Provider>
-    , app);
+    , document.getElementById('app'));
 };
 
