@@ -5,7 +5,7 @@ var config = require('../config/conf.js');
 var HTML = React.createClass({
     render: function() {
         return React.createElement('html', null,
-            React.createElement(Header, {bootstrapData: this.props.bootstrapData || {}}),
+            React.createElement(Header, {initialState: this.props.initialState || {}}),
             React.createElement(Body))
     }
 });
@@ -19,7 +19,7 @@ var Body = React.createClass({
 var Header = React.createClass({
     render: function() {
         return React.createElement('head', null,
-            React.createElement('script', null, `window.bootstrapData = ${JSON.stringify(this.props.bootstrapData)}`),
+            React.createElement('script', null, `window.__INITIAL_STATE__ = ${JSON.stringify(this.props.initialState)}`),
             React.createElement('script', {src: config.Server.url.lib}),
             React.createElement('script', {src: config.Server.url.main}))
     }

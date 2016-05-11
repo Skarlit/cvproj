@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import { connect } from 'react-redux'
+import Radium from 'radium';
 
 class App extends React.Component {
     constructor() {
@@ -7,8 +8,10 @@ class App extends React.Component {
     }
     render() {
         console.log(this.props);
-       return <div>Hi
-            {this.props.children}
+       return <div>
+            <div>
+                {this.props.children}
+            </div>
        </div>
     }
 }
@@ -17,4 +20,4 @@ function select(state) {
     return state
 }
 
-export default connect(select)(App);
+export default connect(select)(Radium(App));
