@@ -12,6 +12,7 @@
     "color": "^0.11.1",
     "d3": "^3.5.11",
     "debug-loader": "0.0.1",
+    "ejs": "^2.4.1",
     "express": "^4.13.4",
     "gulp": "^3.9.0",
     "gulp-util": "^3.0.7",
@@ -42,7 +43,8 @@
     "testDirectoryName": "test"
   },
   "scripts": {
-    "start": "nodemon ./server/start_server.js",
-    "test": "jest"
+    "start": "nodemon ./server/app_server.js",
+    "test": "jest",
+    "start_api": "python ./api_server/api_server.py"
   }
 }
