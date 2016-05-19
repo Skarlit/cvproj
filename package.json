@@ -1,5 +1,5 @@
 {
-  "name": "cvdb-node",
+  "name": "kyala",
   "dependencies": {
     "babel-core": "^6.3.17",
     "babel-loader": "^6.2.0",
@@ -34,6 +34,8 @@
   },
   "private": true,
   "devDependencies": {
+    "babel-jest": "^12.0.2",
+    "babel-polyfill": "^6.9.0",
     "eslint": "^1.10.3",
     "eslint-loader": "^1.1.1",
     "jest-cli": "^0.8.2",
